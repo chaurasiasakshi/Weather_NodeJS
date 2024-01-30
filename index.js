@@ -19,7 +19,8 @@ requests("https://api.openweathermap.org/data/2.5/weather?q=Pune&units=metric&ap
             const arrData = [objdata];
             // console.log(arrData[0].main.temp);
             const realTimeData = arrData.map((val)=>{
-                replaceVal(homeFile,val);
+               console.log(val.main);
+                // replaceVal(homeFile,val);
             });
         })
         .on("end", (err) => {
