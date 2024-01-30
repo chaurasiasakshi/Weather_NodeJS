@@ -163,7 +163,7 @@
         {%location%},{%country%}
       </h2>  
       <p id="date">Today, 25th July 2022</p>
-      <h1 class="temp">{%tempval%}</h1>
+      <h1 class="temp">{%tempval%} &deg;C</h1>
       <h3 class="tempMin_max">Min {%tempmin%} | Max {%tempmax%}</h3>
        </div>
      </div>
@@ -171,7 +171,7 @@
       const curDate = document.getElementById("date");
       let weathericon = document.getElementById("weathericon");
 
-      const tempStatus = "Clouds";
+      const tempStatus = "{%tempStatus%}";
 
       const getCurrentDay = ()=>{
         var weekday = new Array(7);
