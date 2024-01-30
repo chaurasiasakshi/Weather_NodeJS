@@ -173,6 +173,24 @@
 
       const tempStatus = "{%tempStatus%}";
 
+      //conditions
+      if (tempStatus == "Sunny"){
+        weathercon.innerHTML =
+        "<i class='fa-solid fa-sun' style='color: #FFD43B;></i>";
+        
+      } else if (tempStatus == "Clouds"){
+        weathercon.innerHTML =
+        "<i class='fa-solid fa-cloud' style='color: #FFD43B;></i>";
+        
+        }else if (tempStatus == "Rainy"){
+        weathercon.innerHTML =
+        "<i class='fa-solid fa-rainy' style='color: #FFD43B;></i>";
+        
+        } else {
+        weathercon.innerHTML =
+        "<i class='fa-solid fa-cloud' style='color: #44c3de;></i>";
+        
+        }
       const getCurrentDay = ()=>{
         var weekday = new Array(7);
         weekday[0] = "Sunday";

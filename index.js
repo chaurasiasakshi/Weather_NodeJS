@@ -9,7 +9,7 @@ temperature = tempVal.replace("{%tempmin%}",orgVal.main.temp_min);
 temperature = tempVal.replace("{%tempmax%}",orgVal.main.temp_max);
 temperature = tempVal.replace("{%location%}",orgVal.name);
 temperature = tempVal.replace("{%country%}",orgVal.sys.country);
-temperature = tempVal.replace("{%tempStatus%}",orgVal.sys.country);
+temperature = tempVal.replace("{%tempStatus%}",orgVal.weather[0].main);
 return temperature;
 }
 const server = http.createServer((req,res)=>{
